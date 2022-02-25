@@ -10,7 +10,7 @@ a{
 
 .grad{
     background-image: linear-gradient(to bottom right, rgb(33,212,253,0.1), rgb(183,33,255, 0.1)), 
-    url('/images/desk-image.jpeg');
+    url('images/desk-image.jpeg');
     height: 100vh;
     background-size: cover;
 }
