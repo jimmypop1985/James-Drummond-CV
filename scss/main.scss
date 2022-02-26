@@ -1,28 +1,49 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway:wght@400;700&display=swap');
+@import 'config';
 
-
-html {
-    box-sizing: border-box;
+body{
+    background-image: linear-gradient(to bottom right, $primary-color, $secondary-color), 
+    url('../images/desk-image.jpeg');
+    height: 100vh;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1;
 }
+
+
 a{
     text-decoration: none;
 }
 
-.grad{
-    background-image: linear-gradient(to bottom right, rgb(33,212,253,0.1), rgb(183,33,255, 0.1)), 
-    url('../images/desk-image.jpeg');
-    height: 100vh;
-    background-size: cover;
+header{
+    position: fixed;
+    z-index: 2;
+    width:100%;
+    padding: 1rem;
 }
- 
+
 
 main{
     display: flex;
     height: 100%;
+    width:100%;
     margin: 0 auto;
+
+    .social-icons{
+        position: fixed;
+        bottom:2rem;
+        left:1rem;
+
+        a{
+            padding: 0.4rem;
+        }
+
+        a:hover{
+            color:white;
+        }
+    }
 }
-
-
 
 nav{
     display: flex;
@@ -60,9 +81,6 @@ a:hover{
     color: white;
 }
 
-.oswald{
-    font-family: 'Oswald', sans-serif;
-}
 .big-text{
     font-size:36pt;
 }
@@ -103,11 +121,11 @@ a:hover{
 
 .big-icon{
     height:80px;
-    background-color: white;
+    background-color: $icon-background-color;
 }
 
 .background{
-    background-color: black;
+    background-color: $box-background-color;
     opacity: 70%;
 }
 
