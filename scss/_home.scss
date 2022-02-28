@@ -1,0 +1,48 @@
+.home{
+    background-image: linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color,0.3)), 
+    url('../images/desk-image.jpeg');
+    height:100%;
+    padding-top: 30vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            object-fit: cover;
+            height: 8rem;
+            width: auto;
+            opacity: 70%;
+        }
+    }
+
+    &__name{
+        font-size: 5rem;
+        font-weight: $regular;
+        color: $text-color;
+        padding: 0.4rem;
+        margin: 0%;
+        width:100%;
+        border-bottom: 3px solid $text-color;
+
+        &__icon{
+            height: 5rem;
+        }
+
+        &--last{
+            color: $secondary-color;
+            font-weight: $bold;
+        }
+
+    }
+
+    
+    &__subtitle{
+        color: $text-color;
+    }
+}
