@@ -26,6 +26,29 @@ header {
   padding: 1rem;
 }
 
+header a {
+  color: black;
+}
+
+header a:hover p {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+header .menu-btn-burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,6 +58,11 @@ main {
   margin: 0 auto;
 }
 
+main a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 main .social-icons {
   position: fixed;
   bottom: 2rem;
@@ -42,27 +70,13 @@ main .social-icons {
 }
 
 main .social-icons a {
+  color: white;
   padding: 0.4rem;
 }
 
-main .social-icons a:hover {
-  color: white;
-}
-
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+main .social-icons i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .small-box {
@@ -79,25 +93,9 @@ nav {
           align-items: flex-end;
 }
 
-.small-box h1, h2, p {
-  margin: 0px;
-}
-
 .small-box p {
   padding: 5px;
   text-align: right;
-}
-
-nav a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-a:hover {
-  opacity: 70%;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .white-text {

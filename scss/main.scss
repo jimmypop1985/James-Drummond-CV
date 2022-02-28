@@ -11,7 +11,6 @@ body{
     line-height: 1;
 }
 
-
 a{
     text-decoration: none;
 }
@@ -21,8 +20,22 @@ header{
     z-index: 2;
     width:100%;
     padding: 1rem;
-}
+   
+    a{
+        color: $primary-text-color;
+    }
+    
+    a:hover p{
+        transform: $transform-scale;
+    }
 
+    .menu-btn-burger{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        width:fit-content;
+    }
+}
 
 main{
     display: flex;
@@ -30,26 +43,25 @@ main{
     width:100%;
     margin: 0 auto;
 
+    a:hover{
+        transform: $transform-scale;
+    }
+
     .social-icons{
         position: fixed;
         bottom:2rem;
         left:1rem;
 
         a{
+            color:$secondary-text-color;
             padding: 0.4rem;
         }
 
-        a:hover{
-            color:white;
+        i:hover{
+            transform: $transform-scale;
         }
-    }
-}
 
-nav{
-    display: flex;
-    flex-direction: column;
-    flex:1;
-    justify-content: center;
+    }
 }
 
 .small-box{
@@ -59,22 +71,9 @@ nav{
     align-items: flex-end;
 }
 
-.small-box h1,h2, p{
-    margin:0px;
-}
-
 .small-box p{
     padding:5px;
     text-align: right;
-}
-
-nav a{
-    width: fit-content;
-}
-
-a:hover{
-    opacity: 70%;
-    transform: scale(1.1);
 }
 
 .white-text{
