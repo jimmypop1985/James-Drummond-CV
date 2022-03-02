@@ -3,9 +3,14 @@
 @import 'config';
 @import 'home';
 @import 'menu';
+@import'about';
+@import 'portfolio';
+@import 'contact';
+@import 'responsive';
 
 body{
-    
+
+    background-color: $primary-color;
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
@@ -13,6 +18,10 @@ body{
 
 a{
     text-decoration: none;
+}
+
+.text-secondary{
+    color:  $secondary-color;
 }
 
 header{
@@ -41,6 +50,7 @@ main{
     }
 
     .social-icons{
+
         position: fixed;
         bottom:1rem;
         left:1rem;
@@ -49,12 +59,11 @@ main{
             color:$text-color;
             padding: 0.4rem;
             @include transition-ease;
-        }
-
-        a:hover{
-            transform: $transform-scale;
-            color: $secondary-color;
-
+            
+            i:hover{
+                transform: $transform-scale;
+                color: $secondary-color;
+            }
         }
     }
 }
