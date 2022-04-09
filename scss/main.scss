@@ -6,7 +6,6 @@
 @import'about';
 @import 'portfolio';
 @import 'contact';
-@import 'animations';
 @import 'responsive';
 
 body{
@@ -59,10 +58,10 @@ main{
         a{
             color:$text-color;
             padding: 0.4rem;
-            @include transition-ease;
             
             i:hover{
                 transform: $transform-scale;
+                transition: transform 0.4s ease-in-out;
                 color: $secondary-color;
             }
         }
