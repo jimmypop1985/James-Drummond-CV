@@ -37,6 +37,10 @@
             grid-template-columns: repeat(2, 1fr);
         }
 
+        &__text{
+            color: white;
+        }
+
         .text-secondary{
             font-size: 3rem;
         }

@@ -1,6 +1,10 @@
 .portfolio{
     padding-bottom: 2rem;
 
+    &__text{
+        color: white;
+    }
+
 
     &__bio-image{
         height: 30vh;
@@ -42,7 +46,9 @@
         cursor: pointer;  
         
         img{
-         object-fit: cover;
+            width: 100%;
+            object-fit: cover;
+            
         }
 
         &::after{
@@ -74,8 +80,8 @@
         height: 100%;
         width:100%;
         z-index: 1;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        justify-content: space-around;
         align-items: center;
         text-align: center;
    }

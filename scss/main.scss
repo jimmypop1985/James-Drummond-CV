@@ -24,6 +24,24 @@ a{
     color:  $secondary-color;
 }
 
+.social-icons{
+
+    position: fixed;
+    bottom: 1rem;
+    left:1rem;
+
+    a{
+        color:$text-color;
+        padding: 0.4rem;
+        
+        i:hover{
+            transform: $transform-scale;
+            transition: transform 0.4s ease-in-out;
+            color: $secondary-color;
+        }
+    }
+}
+
 header{
     position: fixed;
     z-index: 2;
@@ -47,24 +65,6 @@ main{
 
     a:hover{
         transform: $transform-scale;
-    }
-
-    .social-icons{
-
-        position: fixed;
-        bottom:1rem;
-        left:1rem;
-
-        a{
-            color:$text-color;
-            padding: 0.4rem;
-            
-            i:hover{
-                transform: $transform-scale;
-                transition: transform 0.4s ease-in-out;
-                color: $secondary-color;
-            }
-        }
     }
 }
 

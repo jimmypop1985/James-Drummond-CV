@@ -216,6 +216,9 @@
 .portfolio {
   padding-bottom: 2rem;
 }
+.portfolio__text {
+  color: white;
+}
 .portfolio__bio-image {
   height: 30vh;
   width: 100%;
@@ -249,6 +252,7 @@
   cursor: pointer;
 }
 .portfolio__item img {
+  width: 100%;
   object-fit: cover;
 }
 .portfolio__item::after {
@@ -275,8 +279,8 @@
   height: 100%;
   width: 100%;
   z-index: 1;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 }
@@ -354,6 +358,9 @@
   .portfolio__items {
     grid-template-columns: repeat(2, 1fr);
   }
+  .portfolio__text {
+    color: white;
+  }
   .portfolio .text-secondary {
     font-size: 3rem;
   }
@@ -370,6 +377,21 @@ a {
 }
 
 .text-secondary {
+  color: #ff652f;
+}
+
+.social-icons {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+.social-icons a {
+  color: #ffffff;
+  padding: 0.4rem;
+}
+.social-icons a i:hover {
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in-out;
   color: #ff652f;
 }
 
@@ -393,20 +415,6 @@ main {
 }
 main a:hover {
   transform: scale(1.2);
-}
-main .social-icons {
-  position: fixed;
-  bottom: 1rem;
-  left: 1rem;
-}
-main .social-icons a {
-  color: #ffffff;
-  padding: 0.4rem;
-}
-main .social-icons a i:hover {
-  transform: scale(1.2);
-  transition: transform 0.4s ease-in-out;
-  color: #ff652f;
 }
 
 footer {
